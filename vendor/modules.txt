@@ -1,0 +1,59 @@
+# github.com/HouzuoGuo/tiedot v0.0.0-20210905174726-ae1e16866d06
+## explicit
+github.com/HouzuoGuo/tiedot/data
+github.com/HouzuoGuo/tiedot/db
+github.com/HouzuoGuo/tiedot/dberr
+github.com/HouzuoGuo/tiedot/gommap
+github.com/HouzuoGuo/tiedot/tdlog
+# github.com/rwcarlsen/goexif v0.0.0-20190401172101-9e8deecbddbd
+## explicit
+github.com/rwcarlsen/goexif/exif
+github.com/rwcarlsen/goexif/tiff
+# github.com/s-rah/onionscan v0.0.0-20170225171031-da42865bb5b1
+## explicit
+github.com/s-rah/onionscan/config
+github.com/s-rah/onionscan/crawldb
+github.com/s-rah/onionscan/deanonymization
+github.com/s-rah/onionscan/model
+github.com/s-rah/onionscan/onionscan
+github.com/s-rah/onionscan/onionscan/steps
+github.com/s-rah/onionscan/protocol
+github.com/s-rah/onionscan/report
+github.com/s-rah/onionscan/spider
+github.com/s-rah/onionscan/utils
+github.com/s-rah/onionscan/webui
+# golang.org/x/crypto v0.0.0-20220722155217-630584e8d5aa
+## explicit; go 1.17
+golang.org/x/crypto/blowfish
+golang.org/x/crypto/cast5
+golang.org/x/crypto/chacha20
+golang.org/x/crypto/curve25519
+golang.org/x/crypto/curve25519/internal/field
+golang.org/x/crypto/ed25519
+golang.org/x/crypto/internal/poly1305
+golang.org/x/crypto/internal/subtle
+golang.org/x/crypto/openpgp
+golang.org/x/crypto/openpgp/armor
+golang.org/x/crypto/openpgp/elgamal
+golang.org/x/crypto/openpgp/errors
+golang.org/x/crypto/openpgp/packet
+golang.org/x/crypto/openpgp/s2k
+golang.org/x/crypto/ssh
+golang.org/x/crypto/ssh/internal/bcrypt_pbkdf
+golang.org/x/crypto/ssh/terminal
+# golang.org/x/net v0.0.0-20220722155237-a158d28d115b
+## explicit; go 1.17
+golang.org/x/net/html
+golang.org/x/net/html/atom
+golang.org/x/net/internal/socks
+golang.org/x/net/proxy
+# golang.org/x/sys v0.0.0-20220520151302-bc2c85ada10a
+## explicit; go 1.17
+golang.org/x/sys/cpu
+golang.org/x/sys/internal/unsafeheader
+golang.org/x/sys/plan9
+golang.org/x/sys/unix
+golang.org/x/sys/windows
+# golang.org/x/term v0.0.0-20210927222741-03fcf44c2211
+## explicit; go 1.17
+golang.org/x/term
