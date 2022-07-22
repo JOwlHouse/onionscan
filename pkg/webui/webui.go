@@ -3,14 +3,15 @@ package webui
 import (
 	"errors"
 	"fmt"
-	"github.com/s-rah/onionscan/config"
-	"github.com/s-rah/onionscan/crawldb"
-	"github.com/s-rah/onionscan/utils"
 	"html/template"
 	"log"
 	"net/http"
 	"strconv"
 	"strings"
+
+	"github.com/JOwlHouse/onionscan/pkg/config"
+	"github.com/JOwlHouse/onionscan/pkg/crawldb"
+	"github.com/JOwlHouse/onionscan/pkg/utils"
 )
 
 type WebUI struct {

@@ -1,10 +1,11 @@
 package deanonymization
 
 import (
-	"github.com/s-rah/onionscan/config"
-	"github.com/s-rah/onionscan/report"
 	"strconv"
 	"strings"
+
+	"github.com/JOwlHouse/onionscan/pkg/config"
+	"github.com/JOwlHouse/onionscan/pkg/report"
 )
 
 // CommonCorrelations extracts relationships from other non-web protocols

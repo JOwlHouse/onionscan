@@ -2,11 +2,12 @@ package deanonymization
 
 import (
 	"fmt"
-	"github.com/s-rah/onionscan/config"
-	"github.com/s-rah/onionscan/report"
 	"net/url"
 	"regexp"
 	"strings"
+
+	"github.com/JOwlHouse/onionscan/pkg/config"
+	"github.com/JOwlHouse/onionscan/pkg/report"
 )
 
 // ApacheModStatus extracts any information related to exposed mod_status endpoints.

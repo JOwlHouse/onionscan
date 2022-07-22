@@ -4,10 +4,11 @@ import (
 	"bytes"
 	"crypto/sha256"
 	"errors"
-	"github.com/s-rah/onionscan/config"
-	"github.com/s-rah/onionscan/report"
 	"regexp"
 	"strings"
+
+	"github.com/JOwlHouse/onionscan/pkg/config"
+	"github.com/JOwlHouse/onionscan/pkg/report"
 )
 
 // A25 is a type for a 25 byte (not base58 encoded) bitcoin address.

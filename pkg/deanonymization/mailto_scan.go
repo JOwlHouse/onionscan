@@ -1,9 +1,10 @@
 package deanonymization
 
 import (
-	"github.com/s-rah/onionscan/config"
-	"github.com/s-rah/onionscan/report"
 	"strings"
+
+	"github.com/JOwlHouse/onionscan/pkg/config"
+	"github.com/JOwlHouse/onionscan/pkg/report"
 )
 
 // MailtoScan Extracts any email addresses linked via mailto targets.

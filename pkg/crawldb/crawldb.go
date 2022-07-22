@@ -4,10 +4,11 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/HouzuoGuo/tiedot/db"
-	"github.com/s-rah/onionscan/model"
 	"log"
 	"time"
+
+	"github.com/HouzuoGuo/tiedot/db"
+	"github.com/JOwlHouse/onionscan/pkg/model"
 )
 
 // CrawlDB is the main interface for persistent storage in OnionScan

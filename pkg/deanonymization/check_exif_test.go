@@ -1,11 +1,12 @@
 package deanonymization
 
 import (
-	"github.com/s-rah/onionscan/report"
-	"github.com/s-rah/onionscan/utils"
 	"io/ioutil"
 	"strings"
 	"testing"
+
+	"github.com/JOwlHouse/onionscan/pkg/report"
+	"github.com/JOwlHouse/onionscan/pkg/utils"
 )
 
 var truncatedJpeg = []byte{

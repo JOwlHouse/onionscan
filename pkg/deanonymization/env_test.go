@@ -1,14 +1,15 @@
 package deanonymization
 
 import (
-	"github.com/s-rah/onionscan/config"
-	"github.com/s-rah/onionscan/crawldb"
-	"github.com/s-rah/onionscan/model"
-	"github.com/s-rah/onionscan/report"
 	"io/ioutil"
 	"net/http"
 	"os"
 	"testing"
+
+	"github.com/JOwlHouse/onionscan/pkg/config"
+	"github.com/JOwlHouse/onionscan/pkg/crawldb"
+	"github.com/JOwlHouse/onionscan/pkg/model"
+	"github.com/JOwlHouse/onionscan/pkg/report"
 )
 
 type EnvContext struct {

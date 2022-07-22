@@ -2,10 +2,11 @@ package deanonymization
 
 import (
 	"fmt"
-	"github.com/s-rah/onionscan/config"
-	"github.com/s-rah/onionscan/report"
 	"regexp"
 	"strings"
+
+	"github.com/JOwlHouse/onionscan/pkg/config"
+	"github.com/JOwlHouse/onionscan/pkg/report"
 )
 
 // GetUserDefinedRelationships extracts any user configured relationships from

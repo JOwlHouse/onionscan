@@ -2,10 +2,11 @@ package onionscan
 
 import (
 	"fmt"
-	"github.com/s-rah/onionscan/config"
-	"github.com/s-rah/onionscan/protocol"
-	"github.com/s-rah/onionscan/report"
 	"time"
+
+	"github.com/JOwlHouse/onionscan/pkg/config"
+	"github.com/JOwlHouse/onionscan/pkg/protocol"
+	"github.com/JOwlHouse/onionscan/pkg/report"
 )
 
 // OnionScan runs the main procol level scans

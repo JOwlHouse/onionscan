@@ -8,11 +8,12 @@ import (
 	"encoding/base32"
 	"encoding/pem"
 	"fmt"
-	"github.com/s-rah/onionscan/config"
-	"github.com/s-rah/onionscan/report"
 	"net/url"
 	"regexp"
 	"strings"
+
+	"github.com/JOwlHouse/onionscan/pkg/config"
+	"github.com/JOwlHouse/onionscan/pkg/report"
 )
 
 // PrivateKey extracts an exposed private key if it exists in the current crawl

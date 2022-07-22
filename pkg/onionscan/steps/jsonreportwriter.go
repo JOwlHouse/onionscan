@@ -3,10 +3,11 @@ package steps
 import (
 	"bytes"
 	"fmt"
-	"github.com/s-rah/onionscan/report"
 	"log"
 	"os"
 	"time"
+
+	"github.com/JOwlHouse/onionscan/pkg/report"
 )
 
 // JSONReportWriter is a sink Pipeline step used to output a JSON formated
