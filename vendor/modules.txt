@@ -9,19 +9,6 @@ github.com/HouzuoGuo/tiedot/tdlog
 ## explicit
 github.com/rwcarlsen/goexif/exif
 github.com/rwcarlsen/goexif/tiff
-# github.com/s-rah/onionscan v0.0.0-20170225171031-da42865bb5b1
-## explicit
-github.com/s-rah/onionscan/config
-github.com/s-rah/onionscan/crawldb
-github.com/s-rah/onionscan/deanonymization
-github.com/s-rah/onionscan/model
-github.com/s-rah/onionscan/onionscan
-github.com/s-rah/onionscan/onionscan/steps
-github.com/s-rah/onionscan/protocol
-github.com/s-rah/onionscan/report
-github.com/s-rah/onionscan/spider
-github.com/s-rah/onionscan/utils
-github.com/s-rah/onionscan/webui
 # golang.org/x/crypto v0.0.0-20220722155217-630584e8d5aa
 ## explicit; go 1.17
 golang.org/x/crypto/blowfish
