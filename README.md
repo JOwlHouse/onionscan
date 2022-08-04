@@ -1,7 +1,6 @@
 # What is OnionScan?
 
-
-[![Build Status](https://travis-ci.org/s-rah/onionscan.svg?branch=onionscan-0.2)](https://travis-ci.org/s-rah/onionscan) [![Go Report Card](https://goreportcard.com/badge/github.com/s-rah/onionscan)](https://goreportcard.com/report/github.com/s-rah/onionscan)
+[![Go Report Card](https://goreportcard.com/badge/github.com/JOwlHouse/onionscan)](https://goreportcard.com/report/github.com/JOwlHouse/onionscan)
 
 OnionScan is a free and open source tool for investigating the Dark Web. For all
 the amazing technological innovations in the anonymity and privacy space, there 
@@ -29,7 +28,7 @@ OnionScan has two primary goals:
 
 ### A Note on Dependencies
 
-OnionScan requires either Go 1.6 or 1.7.
+OnionScan requires >= Go 1.17
 
 In order to install OnionScan you will need the following dependencies not 
 provided by the core go standard library:
