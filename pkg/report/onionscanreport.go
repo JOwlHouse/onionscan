@@ -64,6 +64,8 @@ type OnionScanReport struct {
 	SMTPFingerprint string `json:"smtpFingerprint"`
 	SMTPBanner      string `json:"smtpBanner"`
 
+	ProtocolInfoList []ProtocolInfo `json:"protocolInfoList"`
+
 	// Meta Info
 	NextAction string `json:"lastAction"`
 	TimedOut   bool   `json:"timedOut"`
@@ -72,6 +74,16 @@ type OnionScanReport struct {
 	// Sub Reports
 	AnonymityReport *AnonymityReport `json:"identifierReport"`
 	SimpleReport    *SimpleReport    `json:"simpleReport"`
+}
+
+type ProtocolInfo struct {
+	Type string      `json:"type"`
+	Port uint        `json:"port"`
+	Info interface{} `json:"info"`
+}
+
+func (osr *OnionScanReport) AddProtocolInfo(protocolType string, protocolPort uint, protocolInfo interface{}) {
+	osr.ProtocolInfoList = append(osr.ProtocolInfoList, ProtocolInfo{protocolType, protocolPort, protocolInfo})
 }
 
 // LoadReportFromFile creates an OnionScan report from a json encoded file.
