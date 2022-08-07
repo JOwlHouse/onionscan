@@ -7,19 +7,19 @@ import (
 	"log"
 	"time"
 
-	"github.com/HouzuoGuo/tiedot/db"
 	"github.com/JOwlHouse/onionscan/pkg/model"
+	"gorm.io/gorm"
 )
 
 // CrawlDB is the main interface for persistent storage in OnionScan
 type CrawlDB struct {
-	myDB *db.DB
+	myDB *gorm.DB
 }
 
 // NewDB creates new new CrawlDB instance. If the database does not exist at the
 // given dbdir, it will be created.
 func (cdb *CrawlDB) NewDB(dbdir string) {
-	db, err := db.OpenDB(dbdir)
+	db, err := gorm.OpenDB(dbdir)
 	if err != nil {
 		panic(err)
 	}
@@ -84,13 +84,6 @@ func (cdb *CrawlDB) Initialize() {
 
 }
 
-// CrawlRecord defines a spider entry in the database
-type CrawlRecord struct {
-	URL       string
-	Timestamp time.Time
-	Page      model.Page
-}
-
 // InsertCrawlRecord adds a new spider entry to the database and returns the
 // record id.
 func (cdb *CrawlDB) InsertCrawlRecord(url string, page *model.Page) (int, error) {
@@ -151,17 +144,6 @@ func (cdb *CrawlDB) HasCrawlRecord(url string, duration time.Duration) (bool, in
 	}
 
 	return false, 0
-}
-
-// Relationship defines a correltion record in the Database.
-type Relationship struct {
-	ID         int
-	Onion      string
-	From       string
-	Type       string
-	Identifier string
-	FirstSeen  time.Time
-	LastSeen   time.Time
 }
 
 // InsertRelationship creates a new Relationship in the database.
