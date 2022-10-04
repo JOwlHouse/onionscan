@@ -11,7 +11,8 @@ import (
 type CrawlRecord struct {
 	gorm.Model
 
-	URL       string `gorm:"primarykey"`
+	ID        uint   `gorm:"primarykey"`
+	URL       string `gorm:"index"`
 	Timestamp time.Time
 	Page      model.Page
 	RShips    []Relationship
